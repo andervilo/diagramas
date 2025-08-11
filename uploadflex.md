@@ -61,3 +61,14 @@ sequenceDiagram
     QuotationGroupUploadController-->>Client: ResponseEntity<QuotationUploadResponseDTO>
     Note over QuotationGroupUploadController,Client: HTTP 201 Created
   ```
+
+```mermaid
+mindmap
+  root((Arquitetura))
+    Backend
+      Java
+      .NET
+    Frontend
+      Angular
+      React
+```
