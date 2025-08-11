@@ -72,3 +72,22 @@ mindmap
       Angular
       React
 ```
+```mermaid
+sequenceDiagram
+  participant FE as Frontend
+  participant API
+  participant SVC as Service
+
+  FE->>API: POST /acao
+  API->>SVC: executar()
+  alt Sucesso
+    SVC-->>API: OK
+    API-->>FE: 200
+  else Erro de Regra
+    SVC-->>API: 422
+    API-->>FE: 422 {mensagem}
+  else Falha Interna
+    SVC-->>API: 500
+    API-->>FE: 500
+  end
+```
