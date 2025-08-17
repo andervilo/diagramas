@@ -18,5 +18,5 @@ flowchart TD
     N --> O[Lojista recebe valor<br/>em conta corrente]
 
     %% antecipação opcional
-    M -.-> P[Se lojista pedir antecipação:<br/>Credenciadora antecipa parte<br/>com deságio/taxa]
+    M --.-> P[Se lojista pedir antecipação:<br/>Credenciadora antecipa parte<br/>com deságio/taxa]
 ```
